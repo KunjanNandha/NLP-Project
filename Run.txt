@@ -1,0 +1,7 @@
+cd "E:\Projects\Medical Chatbot"
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+$env:GROQ_API_KEY="your_api_key_here"
+python create_memory_with_llm.py
+streamlit run MediBot.py
